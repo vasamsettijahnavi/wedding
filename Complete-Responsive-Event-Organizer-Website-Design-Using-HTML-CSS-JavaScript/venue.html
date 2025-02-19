@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Selection - Wedding Planner</title>
+    <link rel="stylesheet" type="text/css" href="css/venue.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li><a href="index.html" class="px-3">Home</a></li>
+                <li><a href="venue.html" class="px-3">Venue Selection</a></li>
+                <li><a href="contact.html" class="px-3">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search & Filter Section -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" id="search-bar" class="form-control" placeholder="Search for venues..." oninput="filterVenues()">
+            </div>
+            <div class="col-md-6">
+                <select id="filter-select" class="form-control" onchange="filterVenues()">
+                    <option value="all">Filter by Rating</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Venue Selection Section -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Wedding Venue Selection</h1>
+        <div class="row" id="venue-list">
+
+            <!-- Venue 1 -->
+            <div class="col-md-12 mb-4 venue-item" data-rating="4.5" data-name="Banquet Hall">
+                <div class="d-flex">
+                    <img src="images/download.jpeg" alt="Banquet Hall" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Banquet Hall</h3>
+                        <p class="cost">Cost: ₹50,000</p>
+                        <p class="rating">Rating: ★★★★☆ (4.5/5)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Venue 2 -->
+            <div class="col-md-12 mb-4 venue-item" data-rating="3" data-name="Beachside Resort">
+                <div class="d-flex">
+                    <img src="images/beach.jpeg" alt="Beachside Resort" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Beachside Resort</h3>
+                        <p class="cost">Cost: ₹75,000</p>
+                        <p class="rating">Rating: ★★★☆☆ (3/5)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Venue 3 -->
+            <div class="col-md-12 mb-4 venue-item" data-rating="4.2" data-name="Luxury Hotel">
+                <div class="d-flex">
+                    <img src="images/hotel.jpg" alt="Luxury Hotel" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Luxury Hotel</h3>
+                        <p class="cost">Cost: ₹1,00,000</p>
+                        <p class="rating">Rating: ★★★★☆ (4.2/5)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Venue 4 -->
+            <div class="col-md-12 mb-4 venue-item" data-rating="4.3" data-name="Garden Venue">
+                <div class="d-flex">
+                    <img src="images/garden.jpg" alt="Garden Venue" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Garden Venue</h3>
+                        <p class="cost">Cost: ₹60,000</p>
+                        <p class="rating">Rating: ★★★★☆ (4.3/5)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Venue 5 -->
+            <div class="col-md-12 mb-4 venue-item" data-rating="5" data-name="Destination Wedding">
+                <div class="d-flex">
+                    <img src="images/destination.jpg" alt="Destination Wedding" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Destination Wedding</h3>
+                        <p class="cost">Cost: ₹1,50,000</p>
+                        <p class="rating">Rating: ★★★★★ (5/5)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 mb-4 venue-item" data-rating="4" data-name="Moonlit Garden">
+                <div class="d-flex">
+                    <img src="images/moonlit.jpg" alt="Moonlit Garden" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Moonlit Garden</h3>
+                        <p class="cost">Cost: ₹80,000</p>
+                        <p class="rating">Rating: ★★★★☆ (4/5)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12 mb-4 venue-item" data-rating="5" data-name="Heritage Manor">
+                <div class="d-flex">
+                    <img src="images/heritage.jpeg" alt="Heritage Manor" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Heritage Manor</h3>
+                        <p class="cost">Cost: ₹2,00,000</p>
+                        <p class="rating">Rating: ★★★★★ (5/5)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12 mb-4 venue-item" data-rating="3" data-name="Enchanted Oasis">
+                <div class="d-flex">
+                    <img src="images/enchant.jpeg" alt="Enchanted Oasis" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Enchanted Oasis</h3>
+                        <p class="cost">Cost: ₹1,20,000</p>
+                        <p class="rating">Rating: ★★★☆☆ (3/5)</p>
+                    </div>
+                </div>
+            </div>
+          
+            
+
+            <div class="col-md-12 mb-4 venue-item" data-rating="4.5" data-name="Celestial Ballroom">
+                <div class="d-flex">
+                    <img src="images/ballroom.jpeg" alt="Celestial Ballroom" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Celestial Ballroom</h3>
+                        <p class="cost">Cost: ₹1,80,000</p>
+                        <p class="rating">Rating: ★★★★☆ (4.5/5)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12 mb-4 venue-item" data-rating="5" data-name="Royal Courtyard">
+                <div class="d-flex">
+                    <img src="images/courtyard.jpeg" alt="Royal Courtyard" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Royal Courtyard</h3>
+                        <p class="cost">Cost: ₹2,50,000</p>
+                        <p class="rating">Rating: ★★★★★ (5/5)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12 mb-4 venue-item" data-rating="4" data-name="Serene Lakeside Retreat">
+                <div class="d-flex">
+                    <img src="images/lakeside.jpeg" alt="Serene Lakeside Retreat" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Serene Lakeside Retreat</h3>
+                        <p class="cost">Cost: ₹1,40,000</p>
+                        <p class="rating">Rating: ★★★★☆ (4/5)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12 mb-4 venue-item" data-rating="3.5" data-name="Whispering Woods">
+                <div class="d-flex">
+                    <img src="images/woods.jpeg" alt="Whispering Woods" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Whispering Woods</h3>
+                        <p class="cost">Cost: ₹95,000</p>
+                        <p class="rating">Rating: ★★★☆☆ (3.5/5)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12 mb-4 venue-item" data-rating="4.8" data-name="Golden Horizon Resort">
+                <div class="d-flex">
+                    <img src="images/golden.jpeg" alt="Golden Horizon Resort" class="img-fluid rounded-3 w-30" style="height: 200px; object-fit: cover;" loading="lazy">
+                    <div class="venue-description ms-3">
+                        <h3>Golden Horizon Resort</h3>
+                        <p class="cost">Cost: ₹2,20,000</p>
+                        <p class="rating">Rating: ★★★★★ (4.8/5)</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Wedding Planner. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for Search and Filter -->
+    <script>
+        function filterVenues() {
+            var searchQuery = document.getElementById("search-bar").value.toLowerCase();
+            var selectedRating = document.getElementById("filter-select").value;
+            var venues = document.querySelectorAll(".venue-item");
+
+            venues.forEach(function(venue) {
+                var venueName = venue.getAttribute("data-name").toLowerCase();
+                var venueRating = venue.getAttribute("data-rating");
+
+                // Filter by name and rating
+                var matchesSearch = venueName.includes(searchQuery);
+                var matchesRating = selectedRating === "all" || selectedRating === venueRating;
+
+                if (matchesSearch && matchesRating) {
+                    venue.style.display = "block";
+                } else {
+                    venue.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
+
+
+

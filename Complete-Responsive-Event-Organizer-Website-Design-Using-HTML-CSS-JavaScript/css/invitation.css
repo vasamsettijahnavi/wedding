@@ -1,0 +1,140 @@
+/* General Page Styling */
+body {
+    background-image: url('images/backinvitation.jpeg') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fallback color */
+  }
+  
+  /* Hero Section Styling */
+  .hero-section {
+    background-image: url('images/hero-background.jpg'); /* Replace with your desired background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    color: #fff; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow for better readability */
+  }
+  
+  /* Container styling inside the hero section */
+  .hero-section .container {
+    max-width: 800px; /* Limit the width for readability */
+  }
+  
+  /* Heading styling */
+  .hero-section h1 {
+    font-size: 4rem; /* Larger size for the heading */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Space below the heading */
+    letter-spacing: 2px; /* Add spacing between letters */
+  }
+  
+  /* Paragraph styling */
+  .hero-section p {
+    font-size: 1.25rem;
+    font-weight: 300; /* Lighter weight for the paragraph */
+    margin-bottom: 2rem; /* Space below the paragraph */
+    letter-spacing: 1px; /* Subtle letter spacing for better readability */
+  }
+  
+  /* Add a subtle animation to the text for an engaging effect */
+  .hero-section h1, .hero-section p {
+    animation: fadeIn 2s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Navbar */
+  .navbar {
+    font-size: 1.1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  /* Search Bar */
+  .input-group-lg .form-control {
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+  }
+  
+  .input-group-lg .btn {
+    border-radius: 0.5rem;
+  }
+  
+  /* Invitation Cards */
+  .invitation-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .invitation-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .card-text i {
+    color: #f39c12;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+    color: white;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  }
+  
+  
