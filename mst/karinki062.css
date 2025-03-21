@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header {
+    background: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    color: #C71585;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C71585;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 1 rem;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card h3 {
+    margin: 10px 0;
+}
+
+.contact-section {
+    background: url('/home/l411/Downloads/flower.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.contact-section h2 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.contact-section p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    background: #C71585;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #a0136d;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background:#262626;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
