@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9; /* Light background for a soft, wedding vibe */
+    line-height: 1.6; /* Improved readability */
+}
+
+header {
+    background: #fff;
+    padding: 15px 30px; /* Slightly more padding for a spacious feel */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    position: sticky; /* Sticky header for better navigation */
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    color: #C71585; /* Pinkish tone retained for wedding theme */
+    font-size: 2.5rem; /* Larger for prominence */
+    margin: 0;
+}
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('food1.webp') no-repeat center/cover;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Slightly wider gap for better spacing */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600; /* Slightly bolder for emphasis */
+    font-size: 1.1rem;
+    transition: color 0.3s ease, border-bottom 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #C71585;
+    border-bottom: 2px solid #C71585; /* Underline effect on hover */
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px; /* Space below hero */
+}
+
+.hero img {
+    width: 100%;
+    height: 70vh; /* Increased height for a more dramatic effect */
+    object-fit: cover;
+    filter: brightness(80%); /* Slightly darkened for text readability */
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem; /* Larger for impact */
+    font-family: 'Georgia', serif; /* Matches header for consistency */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow for contrast */
+    letter-spacing: 1px; /* Subtle spacing for elegance */
+}
+
+.menu-section {
+    padding: 50px 30px; /* More padding for a luxurious feel */
+    text-align: center;
+    background-color: #fff; /* White background for sections */
+    margin: 20px 0; /* Spacing between sections */
+    border-radius: 10px; /* Rounded corners for softness */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    color: #C71585; /* Theme color for headings */
+    font-family: 'Georgia', serif;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly wider cards */
+    gap: 25px; /* More spacing between cards */
+    margin-top: 20px;
+}
+
+.service-card {
+    border: 1px solid #eee; /* Lighter border */
+    border-radius: 15px; /* Softer corners */
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* White background for cards */
+}
+
+.service-card img {
+    width: 100%;
+    height: 250px; /* Slightly shorter for balance */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Lift effect instead of scale */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.service-card:hover img {
+    transform: scale(1.05); /* Subtle zoom on image */
+}
+
+.service-card h3 {
+    margin: 15px 0;
+    font-size: 1.4rem; /* Larger for readability */
+    color: #333; /* Darker text for contrast */
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+footer {
+    background: #262626;
+    color: #fff;
+    padding: 20px; /* More padding for a polished look */
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 40px; /* Space above footer */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .menu-section h2 {
+        font-size: 2rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero img {
+        height: 50vh;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .menu-section {
+        padding: 30px 15px;
+    }
+}
+
+/* Navbar Customization */
+.navbar-brand span {
+    color: #007bff; /* Highlighted 'E' in Evento */
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+
+/* Card Hover Effect */
+.food-card .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Section Headings */
+.food-content h2 {
+    color: #333;
+    font-family: 'Georgia', serif; /* Elegant touch */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+}
+.navbar-brand span {
+    color: #007bff;
+}
+.hero-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+.food-card .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.food-card .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+.food-content h2 {
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+@media (max-width: 768px) {
+    .hero-section h1 { font-size: 2.5rem; }
+    .hero-section p { font-size: 1rem; }
+}

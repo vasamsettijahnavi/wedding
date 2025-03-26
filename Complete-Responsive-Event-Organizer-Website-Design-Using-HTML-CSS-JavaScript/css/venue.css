@@ -13,122 +13,187 @@ body {
 }
 
 /* Header Styles */
-header {
+.header {
     background-color: #333; /* Dark background for navbar */
-    padding: 20px 0;
+    padding: 1rem 0;
 }
 
-header nav ul {
-    list-style: none;
-    text-align: center;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
+.header .navbar-brand {
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #fff;
+}
+
+.header .navbar-brand span {
+    color: #ff4081; /* Pink accent */
+}
+
+.header .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
     transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
+.header .nav-link:hover,
+.header .nav-link.active {
     color: #ff4081;
 }
 
-/* Search & Filter */
-#search-bar, #filter-select {
-    width: 100%;
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 4rem 0;
 }
 
-/* Venue Styles */
-.venue-item {
-    display: flex;
-    align-items: center;
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+/* Search & Filter Section */
+.search-filter {
     background-color: #fff;
-    padding: 20px;
+    padding: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.search-filter .input-group-text {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+}
+
+.search-filter .form-control,
+.search-filter .form-select {
+    border-radius: 0.5rem;
+    box-shadow: none;
+    font-size: 1rem;
+    padding: 0.75rem;
+}
+
+.search-filter .form-control:focus,
+.search-filter .form-select:focus {
+    border-color: #ff4081;
+    box-shadow: 0 0 0 0.2rem rgba(255, 64, 129, 0.25);
+}
+
+/* Venue List Styles */
+.venue-list {
+    padding: 3rem 0;
+}
+
+.venue-item .card {
+    background-color: #fff;
+    border: none;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.venue-item:hover {
+.venue-item .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.venue-description h3 {
-    font-size: 24px;
-    color: #ff4081;
+.venue-item .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.venue-item .card:hover .card-img-top {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.venue-item .card-body {
+    padding: 1.5rem;
+}
+
+.venue-item .card-title {
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
     background: linear-gradient(to right, #ff7e5f, #feb47b, #ff6a00, #ff00ff, #00d2ff, #8e2de2, #4a00e0);
     -webkit-background-clip: text;
     color: transparent;
+    margin-bottom: 0.75rem;
 }
 
-.venue-description .cost {
-    font-size: 18px;
-    color: #4caf50;
-    margin-bottom: 5px;
+.venue-item .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.75rem;
 }
 
-.venue-description .rating {
-    font-size: 16px;
-    color: #ff9800;
+.venue-item .cost {
+    font-size: 1.25rem;
+    color: #4caf50; /* Green for cost */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.venue-item .rating {
+    font-size: 1rem;
+    color: #ff9800; /* Orange for rating */
+}
+
+.venue-item .btn-primary {
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.venue-item .btn-primary:hover {
+    background-color: #e91e63;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333; /* Dark background for footer */
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 1.5rem;
+    font-size: 0.9rem;
 }
 
-footer p {
-    font-size: 14px;
-}
-
-/* Venue Modal Styles */
-.venue-modal-content h3 {
-    font-size: 28px;
-    color: #ff4081;
-}
-
-.venue-modal-content p {
-    font-size: 18px;
-    color: #333;
-}
-
-.social-share button {
-    margin-top: 10px;
-}
-
-/* Hover Effects */
-.venue-item:hover img {
-    opacity: 0.8;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-}
-
-/* Rainbow Gradient Animation */
+/* Rainbow Gradient Animation (Optional) */
 @keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
+.venue-item .card-title {
+    background-size: 200% 200%;
+    animation: gradientBG 10s ease infinite;
+}
 
-
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .venue-item .card-title {
+        font-size: 1.25rem;
+    }
+    .venue-item .cost {
+        font-size: 1.1rem;
+    }
+}

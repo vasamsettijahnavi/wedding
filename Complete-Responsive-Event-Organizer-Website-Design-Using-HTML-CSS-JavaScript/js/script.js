@@ -63,35 +63,29 @@ var swiper = new Swiper(".review-slider", {
   }
 });
 
-// Venue selection toggle functionality
-// Get the venue selection box and venue list
-const venueSelection = document.getElementById('venueSelection');
-const venueList = document.getElementById('venueList');
-
-// Initially, venue list is hidden
-venueList.style.display = 'none';
-
-// Toggle the visibility of the venue list when the venue selection box is clicked
-venueSelection.addEventListener('click', function() {
-    if (venueList.style.display === 'none') {
-        venueList.style.display = 'block';  // Show the venue list
-    } else {
-        venueList.style.display = 'none';  // Hide the venue list
-    }
-});
-const invitationSelection = document.getElementById('invitationSelection');
-const invitationList = document.getElementById('invitationList');
-
-// Initially hide the invitation list
-invitationList.style.display = 'none';
-
-// Toggle the visibility of the invitation list when the invitation card box is clicked
-invitationSelection.addEventListener('click', function (e) {
-  e.preventDefault(); // Prevent default anchor behavior
-  if (invitationList.style.display === 'none') {
-    invitationList.style.display = 'block'; // Show the invitation list
-  } else {
-    invitationList.style.display = 'none'; // Hide the invitation list
-  }
+// Smooth Scrolling to #contact
+document.querySelectorAll('a[href="#contact"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#contact').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
+// Booking form submission
+document.getElementById('bookingForm').addEventListener('submit', function() {
+    const submitBtn = document.getElementById('submitBtn');
+    submitBtn.value = 'Booked';
+    submitBtn.disabled = true; // Prevent multiple submissions
+    alert('Booking submitted successfully! We will contact you soon.');
+});
+
+document.querySelectorAll('a[href="#contact"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('#contact').scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});

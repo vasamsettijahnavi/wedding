@@ -42,12 +42,10 @@
 <!-- home section starts  -->
 
 <section class="home" id="home">
-
     <div class="content">
         <h3>its time to celebrate! the best <span> event organizers </span></h3>
-        <a href="#" class="btn">contact us</a>
+        <a href="#contact" class="btn">contact us</a>
     </div>
-
     <div class="swiper-container home-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
@@ -58,7 +56,6 @@
             <div class="swiper-slide"><img src="images/slide-6.jpg" alt=""></div>
         </div>
     </div>
-
 </section>
 
 <!-- home section ends -->
@@ -67,81 +64,86 @@
 
 <section class="service" id="service">
 
-    <h1 class="heading"> our <span>services</span> </h1>
-
+    <a href="sam.html">
+        <h1 class="heading"> our <span>services</span> </h1>
+    </a>
+    
     <div class="box-container">
 
-        <div class="box">
-            <a href="venue.html" id="venueSelection">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Venue Selection</h3>
-                <p>We help you find the perfect venue, whether it's an elegant banquet hall, a scenic outdoor location, or a luxurious destination wedding spot.</p>
-            </a>
+        <div class="box" data-service="venue">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Venue Selection</h3>
+            <p>We help you find the perfect venue, whether it's an elegant banquet hall, a scenic outdoor location, or a luxurious destination wedding spot.</p>
+            <a href="venue.html" class="btn service-btn">Learn More</a>
         </div>
         
-
-        <div class="box">
-            <a href="invitation.html" id="venueSelection">
+        <div class="box" data-service="invitation">
             <i class="fas fa-envelope"></i>
-            <h3>invitation card</h3>
+            <h3>Invitation Card</h3>
             <p>Design beautiful and customized invitation cards that reflect your theme and leave a lasting impression on your guests.</p>
-        </a>
+            <a href="invitation.html" class="btn service-btn">Learn More</a>
         </div>
 
-
-        <div class="box">
+        <div class="box" data-service="entertainment">
             <i class="fas fa-music"></i>
             <h3>entertainment</h3>
             <p>From live bands to DJs and cultural performances, we ensure your event is filled with vibrant entertainment.</p>
+            <a href="#" class="btn service-btn">Learn More</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-service="catering">
             <i class="fas fa-utensils"></i>
             <h3>food and drinks</h3>
             <p>Delight your guests with a variety of delicious cuisines and refreshing beverages tailored to your preferences.</p>
+            <a href="Food/food.html" class="btn service-btn">Learn More</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-service="photography">
             <i class="fas fa-photo-video"></i>
             <h3>photos and videos</h3>
             <p>Capture every precious moment with professional photography and videography services to create lifelong memories.</p>
+            <a href="#" class="btn service-btn">Learn More</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-service="custom">
             <i class="fas fa-birthday-cake"></i>
             <h3>custom food</h3>
             <p>Personalized menu options to suit your theme, dietary needs, and special requests for an unforgettable dining experience.</p>
+            <a href="#" class="btn service-btn">Learn More</a>
         </div>
 
     </div>
 
-</section>
+    <!-- Popup Structure -->
+    <div class="service-popup">
+        <div class="popup-content">
+            <span class="close-btn">×</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-desc"></p>
+        </div>
+    </div>
 
+</section>
 
 <!-- service section ends -->
 
 <!-- about section starts  -->
 
 <section class="about" id="about">
-
-<h1 class="heading"><span>about</span> us </h1>
-
-<div class="row">
-
-    <div class="image">
-        <img src="images/about-img.jpg" alt="">
+    <h1 class="heading"><span>about</span> us </h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/about-img.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>we create unforgettable celebrations for you</h3>
+            <p>At our wedding planning team, Jahnavi, Lavinash, Sandeep, and Sarath bring creativity, expertise, and passion to every event. We believe that every wedding should be as unique and special as the couple celebrating it.</p>
+            <p>From venue selection to customized décor, entertainment, and exquisite cuisine, our team ensures that every detail is taken care of with perfection. Let us turn your dream wedding into reality with seamless planning and flawless execution.</p>
+            <a href="#contact" class="btn">contact us</a>
+        </div>
     </div>
-
-    <div class="content">
-        <h3>we create unforgettable celebrations for you</h3>
-        <p>At our wedding planning team, Jahnavi, Lavinash, Sandeep, and Sarath bring creativity, expertise, and passion to every event. We believe that every wedding should be as unique and special as the couple celebrating it.</p>
-        <p>From venue selection to customized décor, entertainment, and exquisite cuisine, our team ensures that every detail is taken care of with perfection. Let us turn your dream wedding into reality with seamless planning and flawless execution.</p>
-        <a href="#" class="btn">contact us</a>
-    </div>
-    
-</div>
-
 </section>
+<!-- about section ends -->
 
 <!-- about section ends -->
 
@@ -311,7 +313,6 @@
 
     </div>
 
-
 </section>
 
 <!-- price section ends -->
@@ -333,6 +334,13 @@
                     <div class="user-info">
                         <h3>Aarav Mehta</h3>
                         <span>happy client</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
                 </div>
                 <p>The team made our wedding a dream come true! From the breathtaking venue decor to seamless event coordination, everything was beyond perfect. Thank you, Jahnavi, Lavinash, Sandeep, and Sarath, for making our special day stress-free and magical.</p>
@@ -345,6 +353,13 @@
                     <div class="user-info">
                         <h3>Sneha Kapoor</h3>
                         <span>happy client</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                     </div>
                 </div>
                 <p>Absolutely loved their professionalism and creativity! They took care of every little detail and turned our vision into reality. The food and entertainment were a hit among our guests. Highly recommended!</p>
@@ -357,6 +372,13 @@
                     <div class="user-info">
                         <h3>Rahul & Priya</h3>
                         <span>happy couple</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
                 </div>
                 <p>We were blown away by their attention to detail and dedication. Every aspect of our wedding was handled with perfection, from the invitation cards to the entertainment. Thank you for giving us memories we will cherish forever!</p>
@@ -369,6 +391,13 @@
                     <div class="user-info">
                         <h3>Neha Sharma</h3>
                         <span>happy client</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                     </div>
                 </div>
                 <p>Truly an outstanding team! They went above and beyond to make sure everything ran smoothly. The photography and videography captured every precious moment beautifully. So grateful for their amazing work!</p>
@@ -376,35 +405,72 @@
 
         </div>
 
+        <div class="swiper-pagination"></div>
+
     </div>
 
 </section>
-
 
 <!-- review section ends -->
 
 <!-- contact section starts  -->
 
+<!-- contact section starts -->
+<!-- contact section starts -->
+<!-- contact section starts -->
+<!-- contact section -->
 <section class="contact" id="contact">
-
-    <h1 class="heading"> <span>contact</span> us </h1>
-
-    <form action="">
+    <h1 class="heading"> <span>book</span> now </h1>
+    <form id="bookingForm" action="https://formsubmit.co/jvasamsetti82@gmail.com" method="POST" class="booking-form">
+        <!-- Hidden field to redirect after submission -->
+        <input type="hidden" name="_next" value="http://your-website-url.com/index.html">
+        <!-- Hidden field for subject -->
+        <input type="hidden" name="_subject" value="New Booking Request">
+        <!-- Optional: Add a honeypot field to prevent spam -->
+        <input type="hidden" name="_honey" value="">
+        <!-- Your form fields -->
         <div class="inputBox">
-            <input type="text" placeholder="name">
-            <input type="email" placeholder="email">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
         </div>
         <div class="inputBox">
-            <input type="number" placeholder="number">
-            <input type="text" placeholder="subject">
+            <input type="tel" name="Phone" placeholder="Your Phone Number" required>
+            <select name="Service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="all">All</option>
+                <option value="venue">Venue Selection</option>
+                <option value="invitation">Invitation Cards</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="catering">Food and Drinks</option>
+                <option value="photography">Photos and Videos</option>
+                <option value="custom">Custom Food</option>
+            </select>
         </div>
-        <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="send message" class="btn">
+        <div class="inputBox">
+            <input type="date" name="Date" placeholder="Event Date" required>
+            <input type="number" name="Guests" placeholder="Number of Guests" min="1" required>
+        </div>
+        <textarea name="Message" placeholder="Additional Details (e.g., theme, preferences)" cols="30" rows="10"></textarea>
+        <input type="submit" value="Book Now" class="btn" id="submitBtn">
     </form>
-
 </section>
 
+
 <!-- contact section ends -->
+<!-- contact section ends -->
+<!-- contact section ends -->
+
+<!-- contact section ends -->
+
+<!-- cta section starts -->
+
+<section class="cta">
+    <h2>Ready to Plan Your Dream Event?</h2>
+    <p>Contact us today to get started with the best event organizers!</p>
+    <a href="#contact" class="btn">Get Started</a>
+</section>
+
+<!-- cta section ends -->
 
 <!-- footer section starts  -->
 
@@ -477,26 +543,6 @@
     </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

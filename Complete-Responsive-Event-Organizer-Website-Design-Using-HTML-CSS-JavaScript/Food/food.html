@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Drinks - Evento</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/food.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><span>E</span>vento</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="food.html">Food & Drinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('food1.webp') no-repeat center/cover;">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white">Wedding Food & Drinks</h1>
+            <p class="lead text-white">Delight your guests with exquisite cuisines and refreshing beverages.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="food-content py-5">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-8">
+                    <div class="input-group input-group-lg shadow-sm">
+                        <span class="input-group-text bg-primary text-white border-0"><i class="fas fa-search"></i></span>
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search food items by name...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vegetarian Section -->
+            <h2 class="text-center mb-4 fw-bold">Vegetarian Delights</h2>
+            <div class="row g-4" id="vegetarianContainer">
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="Gulab Jamuns.webp" class="card-img-top" alt="Gulab Jamun" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Gulab Jamun</h5>
+                            <p class="card-text text-muted">Sweet, syrup-soaked dumplings.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="Rasmalaii.jpg" class="card-img-top" alt="Rasmalai" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Rasmalai</h5>
+                            <p class="card-text text-muted">Creamy cottage cheese dessert.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="kaju-katli-.jpg" class="card-img-top" alt="Kaju Katli" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Kaju Katli</h5>
+                            <p class="card-text text-muted">Rich cashew fudge.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="Putharekulu.jpg" class="card-img-top" alt="Pootharekulu" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Pootharekulu</h5>
+                            <p class="card-text text-muted">Delicate rice paper sweets.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="corn samosa.webp" class="card-img-top" alt="Corn Samosa" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Corn Samosa</h5>
+                            <p class="card-text text-muted">Crispy pastry with corn filling.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="garelu.webp" class="card-img-top" alt="Garelu" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Garelu</h5>
+                            <p class="card-text text-muted">Savory lentil doughnuts.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="gongura-pickle.webp" class="card-img-top" alt="Gongura Pachadi" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Gongura Pachadi</h5>
+                            <p class="card-text text-muted">Tangy sorrel leaf chutney.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="cauliflower-avakaya.webp" class="card-img-top" alt="Cauliflower Avakaya" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Cauliflower Avakaya</h5>
+                            <p class="card-text text-muted">Spicy cauliflower pickle.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="lemon rice.png" class="card-img-top" alt="Lemon Rice" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Lemon Rice</h5>
+                            <p class="card-text text-muted">Zesty rice with lemon flavor.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="Pudina Rice.jpg" class="card-img-top" alt="Pudina Rice" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Pudina Rice</h5>
+                            <p class="card-text text-muted">Mint-flavored rice dish.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="veg biryani.jpg" class="card-img-top" alt="Veg Biryani" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Veg Biryani</h5>
+                            <p class="card-text text-muted">Spiced vegetable rice.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="panasakaya biryani.jpg" class="card-img-top" alt="Panasakaya Biryani" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Panasakaya Biryani</h5>
+                            <p class="card-text text-muted">Jackfruit biryani delight.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="pappu.jpg" class="card-img-top" alt="Pappu" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Pappu</h5>
+                            <p class="card-text text-muted">Traditional lentil stew.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="paneer-butter-masala.png" class="card-img-top" alt="Paneer Butter Masala" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Paneer Butter Masala</h5>
+                            <p class="card-text text-muted">Creamy paneer in tomato sauce.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="mushroomn.jpg" class="card-img-top" alt="Mushroom Curry" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Mushroom Curry</h5>
+                            <p class="card-text text-muted">Spicy mushroom gravy.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="dondakaya fry.jpg" class="card-img-top" alt="Dondakaya Fry" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Dondakaya Fry</h5>
+                            <p class="card-text text-muted">Crispy ivy gourd stir-fry.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="rasam.webp" class="card-img-top" alt="Rasam" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Rasam</h5>
+                            <p class="card-text text-muted">Spicy South Indian soup.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="ulavacharu.jpg" class="card-img-top" alt="Ulavacharu" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Ulavacharu</h5>
+                            <p class="card-text text-muted">Horse gram broth.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="sambar.jpg" class="card-img-top" alt="Sambar" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Sambar</h5>
+                            <p class="card-text text-muted">Lentil and vegetable stew.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="curd-rice.jpg" class="card-img-top" alt="Curd Rice" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Curd Rice</h5>
+                            <p class="card-text text-muted">Cooling yogurt rice.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non-Vegetarian Section -->
+            <h2 class="text-center mb-4 fw-bold mt-5">Non-Vegetarian Specialties</h2>
+            <div class="row g-4" id="nonVegetarianContainer">
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="chicken dum biryani.webp" class="card-img-top" alt="Chicken Dum Biryani" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Dum Biryani</h5>
+                            <p class="card-text text-muted">Flavorful spiced rice with chicken.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="mutton dum biryani1.jpg" class="card-img-top" alt="Mutton Dum Biryani" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Mutton Dum Biryani</h5>
+                            <p class="card-text text-muted">Rich mutton layered with rice.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="Prawn-Biryani.jpg" class="card-img-top" alt="Prawn Biryani" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Prawn Biryani</h5>
+                            <p class="card-text text-muted">Succulent prawns in spiced rice.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="vall mixed dum biryani.jpeg" class="card-img-top" alt="All Mixed Dum Biryani" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">All Mixed Dum Biryani</h5>
+                            <p class="card-text text-muted">A mix of meats in spiced rice.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="Chicken curry.jpg" class="card-img-top" alt="Chicken Curry" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Curry</h5>
+                            <p class="card-text text-muted">Spicy chicken in rich gravy.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="chicken fry.webp" class="card-img-top" alt="Chicken Fry" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Fry</h5>
+                            <p class="card-text text-muted">Crispy fried chicken pieces.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="mutton curry.jpg" class="card-img-top" alt="Mutton Curry" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Mutton Curry</h5>
+                            <p class="card-text text-muted">Tender mutton in spiced sauce.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="france curry.jpeg" class="card-img-top" alt="France Curry" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">France Curry</h5>
+                            <p class="card-text text-muted">Unique fusion curry.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="prawns fry.jpg" class="card-img-top" alt="Prawns Fry" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Prawns Fry</h5>
+                            <p class="card-text text-muted">Crispy fried prawns.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="fish curry.webp" class="card-img-top" alt="Fish Curry" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Fish Curry</h5>
+                            <p class="card-text text-muted">Spicy fish in tangy gravy.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="fish fry.jpeg" class="card-img-top" alt="Fish Fry" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Fish Fry</h5>
+                            <p class="card-text text-muted">Crispy fried fish.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="egg curry.jpg" class="card-img-top" alt="Egg Curry" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Egg Curry</h5>
+                            <p class="card-text text-muted">Boiled eggs in spiced sauce.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fast Food Section -->
+            <h2 class="text-center mb-4 fw-bold mt-5">Fast Food Favorites</h2>
+            <div class="row g-4" id="fastFoodContainer">
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="fried rice.jpg" class="card-img-top" alt="Fried Rice" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Fried Rice</h5>
+                            <p class="card-text text-muted">Quick and tasty stir-fried rice.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="noodles.webp" class="card-img-top" alt="Noodles" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Noodles</h5>
+                            <p class="card-text text-muted">Spicy and flavorful noodles.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="panipuri.jpg" class="card-img-top" alt="Panipuri" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Panipuri</h5>
+                            <p class="card-text text-muted">Crispy puris with spiced water.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="pav bhaji.jpg" class="card-img-top" alt="Pav Bhaji" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Pav Bhaji</h5>
+                            <p class="card-text text-muted">Spiced veggie mash with bread.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mocktails Section -->
+            <h2 class="text-center mb-4 fw-bold mt-5">Refreshing Mocktails</h2>
+            <div class="row g-4" id="mocktailsContainer">
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="virgin mojito.jpeg" class="card-img-top" alt="Virgin Mojito" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Virgin Mojito</h5>
+                            <p class="card-text text-muted">Minty and refreshing non-alcoholic drink.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="blue mojito.jpeg" class="card-img-top" alt="Blue Mojito" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Blue Mojito</h5>
+                            <p class="card-text text-muted">Vibrant blue twist on a classic.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="watermelon-Mojitos.jpg" class="card-img-top" alt="Watermelon Mojito" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Watermelon Mojito</h5>
+                            <p class="card-text text-muted">Fruity watermelon refreshment.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-card">
+                    <div class="card h-100 shadow-sm food-item">
+                        <img src="strawberry mojito.jpg" class="card-img-top" alt="Strawberry Mojito" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Strawberry Mojito</h5>
+                            <p class="card-text text-muted">Sweet strawberry mocktail.</p>
+                            <a href="index.html#contact" class="btn btn-outline-primary btn-sm">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2025 Evento - Event Organizer. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/food.js"></script>
+</body>
+</html>
+
+
