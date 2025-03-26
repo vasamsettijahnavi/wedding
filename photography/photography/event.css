@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fff0f5, #ffdab9, #d4f4dd, #e6e6fa); /* Pink to peach to mint to lavender */
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(45deg, #800080, #FF69B4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(45deg, #ff99cc, #ff6f61, #fffacd, #ffccff); /* Pink to coral to pale yellow to purple */
+}
+
+.hero h2 {
+    background: linear-gradient(45deg, #FF6F61, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-image {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-text h2 {
+    background: linear-gradient(45deg, #006D5B, #00CED1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+.card-text p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #e63946;
+}
+
+.rating {
+    color: gold;
+    font-size: 20px;
+}
+
+.new-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e63946;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    width: 100%;
+}
+
+footer {
+    background: linear-gradient(45deg, #ff99cc, #ff6f61, #fffacd, #ffccff); /* Same as hero for consistency */
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .card-image {
+        width: 100%;
+        height: auto;
+    }
+    .card-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
