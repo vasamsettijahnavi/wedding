@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: #222; /* Dark background to match index.html */
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(34, 34, 34, 0.9); /* Semi-transparent dark background */
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+}
+
+.header .navbar a {
+    font-size: 1.4rem; /* Smaller font size as per index.html */
+    color: #fff;
+    margin-left: 2rem;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+.header .navbar a:hover {
+    color: #ff6f61; /* Pink accent from index.html */
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 60vh;
+    background: #000; /* Black background as per index.html */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .content h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero .content h1 span {
+    color: #ff6f61; /* Pink accent from index.html */
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative;
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.search-bar i {
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+/* Photography Section */
+.photography {
+    padding: 8rem 9% 4rem;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    gap: 2rem;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Hover effect from index.html */
+    box-shadow: 0 8px 20px rgba(255, 111, 97, 0.2); /* Subtle pink glow on hover */
+}
+
+.photography-image {
+    width: 25rem;
+    height: 15rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border for elegance */
+}
+
+.content h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: #eee;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.content p a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.content p a:hover {
+    text-decoration: underline;
+}
+
+.content .rating {
+    font-size: 1.8rem;
+    color: gold;
+    margin-bottom: 1rem;
+}
+
+.content .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #ff6f61;
+    color: #fff;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.content .btn:hover {
+    background: #e65b50; /* Darker pink on hover */
+    transform: scale(1.05);
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    color: #eee;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p {
+    font-size: 1.6rem;
+    color: #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .photography {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero .content h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #222;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.3s ease;
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photography-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content h3 {
+        font-size: 2rem;
+    }
+
+    .content p,
+    .content .rating {
+        font-size: 1.4rem;
+    }
+
+    .content .btn {
+        font-size: 1.4rem;
+        padding: 0.6rem 1.5rem;
+    }
+}
